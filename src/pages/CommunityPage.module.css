@@ -1,0 +1,118 @@
+.container {
+
+    padding-top: 150px;
+
+}
+
+.tabs {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+.tabs button {
+    width: 25%;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.tabs button:hover {
+    background-color: rgba(35, 176, 228, 1);
+    color: white;
+    border: none;
+}
+
+.tabs .active {
+    background-color: rgba(35, 176, 228, 1);
+    color: white;
+    border: none;
+}
+
+.content {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+
+.main_title {
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+
+
+.select_box select {
+    width: 200px;
+    height: 25px;
+          border: 1px solid #ccc;
+}
+
+
+
+.notice_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+
+
+}
+
+.notice_table thead {
+    background-color: #eee;
+}
+
+.notice_table tbody {
+    border-bottom: 1px solid #ccc;
+}
+
+.notice_table td {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.title select,
+.duration select,
+.search_button {
+    width: 100px;
+    height: 25px;
+        border: 1px solid #ccc;
+
+}
+
+
+.table_bottom {
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+}
+
+.search_box {
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.search_box input {
+    width: 300px;
+    height: 25px;
+     border: 1px solid #ccc;
+  
+}
+
+.search_box .search_button:hover {
+
+     border: 1px solid black;
+        cursor: pointer;
+}

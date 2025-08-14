@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "productImage": "/images/product11.png",
+    "title": "결제 후 출고는 언제 되나요?",
+    "writer": "김****",
+    "date": "2024-04-20",
+    "views": 320
+  },
+  {
+    "id": 2,
+    "productImage": "/images/product13.png",
+    "title": "배송",
+    "writer": "l****",
+    "date": "2024-04-21",
+    "views": 280
+  },
+  {
+    "id": 3,
+    "productImage": "/images/product10.png",
+    "title": "무통장입금 주문 접수",
+    "writer": "달달베***",
+    "date": "2024-04-22",
+    "views": 410
+  },
+  {
+    "id": 4,
+    "productImage": "/images/product13.png",
+    "title": "신규 쿠폰 사용",
+    "writer": "마카****",
+    "date": "2024-04-23",
+    "views": 395
+  },
+  {
+    "id": 5,
+    "productImage": "/images/product10.png",
+    "title": "카라멜 크림 브라우니 한정 판매",
+    "writer": "스위트***",
+    "date": "2024-04-24",
+    "views": 210
+  },
+  {
+    "id": 6,
+    "productImage": "/images/product01.png",
+    "title": "배송조회",
+    "writer": "그린***",
+    "date": "2024-04-25",
+    "views": 275
+  },
+  {
+    "id": 7,
+    "productImage": "/images/product03.png",
+    "title": "상품 오배송",
+    "writer": "쿨디****",
+    "date": "2024-04-26",
+    "views": 315
+  },
+  {
+    "id": 8,
+    "productImage": "/images/product05.png",
+    "title": "단호박 재입고",
+    "writer": "베****",
+    "date": "2024-04-27",
+    "views": 245
+  },
+  {
+    "id": 9,
+    "productImage": "/images/product02.png",
+    "title": "환불",
+    "writer": "헬시****",
+    "date": "2024-04-28",
+    "views": 198
+  },
+  {
+    "id": 10,
+    "productImage": "/images/product02.png",
+    "title": "주소잘못입력해서 주문했어요",
+    "writer": "브런***",
+    "date": "2024-04-29",
+    "views": 335
+  }
+]

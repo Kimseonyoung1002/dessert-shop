@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dessert-shop/static/css/main.ebaa0e56.css",
+    "main.js": "/dessert-shop/static/js/main.c7a6d9f9.js",
+    "static/js/453.beec1eda.chunk.js": "/dessert-shop/static/js/453.beec1eda.chunk.js",
+    "index.html": "/dessert-shop/index.html",
+    "main.ebaa0e56.css.map": "/dessert-shop/static/css/main.ebaa0e56.css.map",
+    "main.c7a6d9f9.js.map": "/dessert-shop/static/js/main.c7a6d9f9.js.map",
+    "453.beec1eda.chunk.js.map": "/dessert-shop/static/js/453.beec1eda.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebaa0e56.css",
+    "static/js/main.c7a6d9f9.js"
+  ]
+}

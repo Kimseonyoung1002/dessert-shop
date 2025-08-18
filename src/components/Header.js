@@ -4,9 +4,9 @@ import styled from 'styled-components';
 // import CartPage from "../pages/CartPage";
 
 const HeaderWrapper = styled.header`
-display: flex;
-justify-content: space-between;
-align-items: center;
+width: 100%;
+
+
 height: 100px;
 border-bottom: 1px solid #ccc;
 
@@ -14,14 +14,17 @@ border-bottom: 1px solid #ccc;
   position: fixed;  
   top: 0;          
   left: 0;
-  width: 100%;      
-  height: 100px;
-  border-bottom: 1px solid #ccc;
   background-color: white;
   z-index: 1000;   
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+`
+
+const HeaderInner = styled.header`
+width: 1280px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+margin: 0 auto;
 `
 
 const LeftGroup = styled.div`
@@ -65,6 +68,7 @@ const NavItem = styled(Link)`
 const Header = () => {
   return (
     <HeaderWrapper>
+      <HeaderInner>
       <LeftGroup>
         <Link to="/">
           <LogoImg src={process.env.PUBLIC_URL + '/images/logo.jpg'} alt="로고" />
@@ -81,6 +85,7 @@ const Header = () => {
         <NavItem href="#"><img src={process.env.PUBLIC_URL + '/images/member.png'} alt="마이페이지" /></NavItem>
         <NavItem to="/CartPage"><img src={process.env.PUBLIC_URL + '/images/cart.png'} alt="장바구니" /></NavItem>
       </Nav>
+      </HeaderInner>
     </HeaderWrapper>
   );
 };

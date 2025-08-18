@@ -165,11 +165,6 @@ const CartPage = () => {
           <ButtonBox>
             <Button type="button" 
                     className="btn btn-light"
-                  //    style={{
-                  //       '--bs-btn-padding-y': '3.75rem',
-                  //   '--bs-btn-padding-x': '2rem',
-                  //   '--bs-btn-font-size': '15px'
-                  // }}
 
               onClick={handleClear}>장바구니 비우기</Button>
             <Button type="button" className="btn btn-dark">구매하기</Button>

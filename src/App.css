@@ -9,6 +9,9 @@
 .card_banner01 {
   margin: 200px 0;
 }
+.card_banner {
+  width:100%
+}
 
 .banner_img {
   width: 100%;
@@ -30,13 +33,13 @@
   font-weight: bold;
   font-size: 27px;
   color: rgb(70, 70, 70);
-  padding-bottom: 15px;
+  padding: 200px 0 15px 0;
+  
 }
 
 .sub_title {
   font-size: 20px;
-  color: rgb(151, 151, 151);
-  
+  color: rgb(151, 151, 151);  
 }
 
 

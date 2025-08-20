@@ -65,29 +65,11 @@ const Button = styled.button`
   border: none;
 `;
 
-// const ClearButton = styled.button`
-//   margin-top: 20px;
-//   padding: 8px 16px;
-//   background-color: white;
-//   border: 1px solid black;
-//   color: black;
-//   border-radius: 10px;
-// `;
-
-// const BuyButton = styled.button`
-//  margin-top: 20px;
-//   padding: 8px 16px;
-//   background-color: black;
-//   color: white;
-//   border: none;
-//   border-radius: 10px;
-// `;
 
 const ButtonBox = styled.div`
  display: flex;
     margin-bottom: 50px;
     justify-content: flex-end;
-     
 `;
 
 const Total = styled.div`
@@ -165,7 +147,6 @@ const CartPage = () => {
           <ButtonBox>
             <Button type="button" 
                     className="btn btn-light"
-
               onClick={handleClear}>장바구니 비우기</Button>
             <Button type="button" className="btn btn-dark">구매하기</Button>
           </ButtonBox>

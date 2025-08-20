@@ -3,6 +3,10 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import products from "../data/desserts";
 import { useNavigate } from "react-router-dom";
+import { addItem } from '../store/cartSlice'
+import { useDispatch } from "react-redux";
+import { useState } from "react";
+
 
 
 const DetailWrapper = styled.div`
@@ -304,10 +308,6 @@ const fakeReviews = [
 
 
 
-const Star = styled.span`
-font-size: 14px;
-`;
-
 const ViewMore = styled.div`
 width: 1280px;
 height: 40px;
@@ -411,14 +411,75 @@ padding: 20px;
  color: rgb(70, 70, 70);
 `;
 
+
+const ModalBackdrop = styled.div`
+
+position: fixed;
+top:0;
+left:0;
+width:100%;
+height: 100%;
+background-color: rgba(0,0,0,0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index:999;
+
+`
+
+const ModalContent = styled.div`
+width: 200px;
+height: 100px;
+background: white;
+padding: 30px;
+border-radius: 10px;
+text-align: center;
+z-index: 1000;
+`
+const ModalButton = styled.div`
+
+background-color: rgba(255, 255, 255, 0.8);
+color: rgb(70, 70, 70);
+border: 1px solid #ccc;
+border-radius: 8px;
+width: 150px;
+height: 40px;
+font-size: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+&:hover {
+background-color: black;
+color: white;}`
+
+const ModalButtonGroup =styled.div `
+display: flex;
+gap: 10px;
+justify-content: center;
+padding-top: 10px;
+`
+
+
+
+
 const DetailPage = () => {
   const navigate = useNavigate();
-  const cartClick = () => {
-    navigate('/CartPage')
-  }
+  // const cartClick = () => {
+  //    navigate('/CartPage')
+  // };
+  const [showModal, setShowModal] = useState(false);
+  const dispatch = useDispatch();
   const { id } = useParams();
   const product = products.find((item) => item.id === Number(id));
+    const handleAddToCart = () => {
+    dispatch(addItem(product));
+    setShowModal(true);
+  };
+
+
   return (
+    <>
     <DetailWrapper>
 
       <ContentBox>
@@ -456,7 +517,8 @@ const DetailPage = () => {
           <Wrapper><Title>TOTAL</Title> <Content>{product.price}원</Content></Wrapper>
           <ButtonBox>
             <Button>BUY IT NOW</Button>
-            <CartButton onClick={cartClick}>CART</CartButton>
+            {/* <CartButton onClick={cartClick}>CART</CartButton> */}
+            <CartButton onClick={handleAddToCart}>ADD</CartButton>
           </ButtonBox>
         </InfoSection>
       </ContentBox>
@@ -591,6 +653,20 @@ const DetailPage = () => {
       </TabContent>
     </DetailWrapper>
 
+
+{showModal && (<ModalBackdrop>
+<ModalContent>
+  <p>상품이 장바구니에 담겼습니다.</p>
+  <ModalButtonGroup>
+    <ModalButton onClick={() => setShowModal(false)}>계속 쇼핑</ModalButton>
+    <ModalButton onClick={() => navigate('/cartPage')}>장바구니로 이동</ModalButton>
+  </ModalButtonGroup>
+</ModalContent>
+</ModalBackdrop>)}
+
+
+
+</>
 
 
 

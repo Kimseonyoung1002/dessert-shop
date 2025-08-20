@@ -86,7 +86,7 @@ const desserts = [
 {
     id: 15,
     name:'봄날엔 할매니얼 3종 세트',
-    price: 351000,
+    price: 35100,
     image: '/images/product15.png',
 },
 {

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dessert-shop/static/css/main.fb3dbb0a.css",
-    "main.js": "/dessert-shop/static/js/main.f86a5b16.js",
+    "main.js": "/dessert-shop/static/js/main.46a3bfc3.js",
     "static/js/453.beec1eda.chunk.js": "/dessert-shop/static/js/453.beec1eda.chunk.js",
     "index.html": "/dessert-shop/index.html",
     "main.fb3dbb0a.css.map": "/dessert-shop/static/css/main.fb3dbb0a.css.map",
-    "main.f86a5b16.js.map": "/dessert-shop/static/js/main.f86a5b16.js.map",
+    "main.46a3bfc3.js.map": "/dessert-shop/static/js/main.46a3bfc3.js.map",
     "453.beec1eda.chunk.js.map": "/dessert-shop/static/js/453.beec1eda.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb3dbb0a.css",
-    "static/js/main.f86a5b16.js"
+    "static/js/main.46a3bfc3.js"
   ]
 }

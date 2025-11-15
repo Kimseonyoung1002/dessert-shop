@@ -57,6 +57,7 @@ src/
  ┣ styles/
  ┃ ┗ GlobalStyle.js
  ┗ App.jsx
+```
 
 ---
 

@@ -3,7 +3,7 @@
 > React로 제작한 디저트 쇼핑몰 프로젝트입니다.  
 > styled-components를 활용한 컴포넌트 단위 디자인과 Redux 전역 상태 관리,  
 > React Router를 이용한 SPA 페이지 전환을 구현했습니다.
-<br><br>
+
 
 ---
 
@@ -14,7 +14,7 @@
 - **목적:** React 학습을 위해 제작했고 컴포넌트 분리, 라우팅, 전역 상태 관리, 스타일링 등 핵심 개념을 직접 구현해보는 데 목적을 두었습니다.
 - **배포 링크:** _(추가 예정)_  
 - **GitHub Repository:** _(현재 페이지)_
-<br><br>
+
 
 ---
 
@@ -68,7 +68,7 @@ src/
 ```
 
 ---
-<br><br>
+
 ## 📌 주요 기능 상세
 
 ### 1) SPA 내부 탭 전환 (페이지 이동 없이 컴포넌트 교체)
@@ -77,7 +77,7 @@ React Router로 페이지를 나누지 않고,
 
 
 ###🖼️ UI 미리보기
-<p align="center"> <img src="./images/tab-faq.png" width="45%" /> <img src="./images/tab-freeboard.png" width="45%" /> </p>
+<p align="center"> <img src="./fna.png" width="45%" /> <img src="./qna.png" width="45%" /> </p>
 
 
 ```jsx
@@ -132,8 +132,6 @@ FAQ는 정적 테이블,
       </td>
       <td>{item.title}</td>
       <td>{item.writer}</td>
-```
-
 
       <td>{item.date}</td>
       <td>{item.views}</td>

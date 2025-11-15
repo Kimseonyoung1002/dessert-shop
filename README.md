@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# 🍰 Dessert Shop (React Project)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> React로 제작한 디저트 쇼핑몰 프로젝트입니다.  
+> styled-components를 활용한 컴포넌트 단위 디자인과 Redux 전역 상태 관리,  
+> React Router를 이용한 SPA 페이지 전환을 구현했습니다.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📆 프로젝트 개요
+- **개발 기간:** 2025.08  
+- **참여 인원:** 개인 프로젝트  
+- **목적:** React 학습을 위해 제작했고 컴포넌트 분리, 라우팅, 전역 상태 관리, 스타일링 등 핵심 개념을 직접 구현해보는 데 목적을 두었습니다.
+- **배포 링크:** _(추가 예정)_  
+- **GitHub Repository:** _(현재 페이지)_
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ 기술 스택
+| 구분 | 기술 |
+|------|------|
+| **Frontend** | React, Redux Toolkit, React Router |
+| **Styling** | styled-components, app.css, module.css, Bootstrap (layout only) |
+| **Data** | 더미 JSON 데이터 |
+| **Build & Deploy** | Vite, Vercel |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📱 주요 기능
+| 기능 | 설명 |
+|------|------|
+| 🧁 상품 목록 | 16개의 더미 데이터를 이용해 전체 상품 렌더링 |
+| 💖 위시리스트 | 이미지 hover 시 ‘wish’ 버튼 클릭 → 팝업 메시지 출력 |
+| 🛒 장바구니 | ‘add’ 버튼 클릭 시 장바구니 페이지로 이동 |
+| 🏢 회사 소개 | 단순 이미지로 구성된 소개 페이지 |
+| 🔗 네비게이션 | 탭 클릭 시 React Router로 페이지 전환 |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🗂️ 폴더 구조
+```bash
+src/
+ ┣ components/
+ ┃ ┣ ProductCard.jsx
+ ┃ ┣ Header.jsx
+ ┃ ┣ Footer.jsx
+ ┃ ┗ Modal.jsx
+ ┣ pages/
+ ┃ ┣ Home.jsx
+ ┃ ┣ Cart.jsx
+ ┃ ┣ About.jsx
+ ┃ ┗ NotFound.jsx
+ ┣ redux/
+ ┃ ┣ store.js
+ ┃ ┗ productSlice.js
+ ┣ data/
+ ┃ ┗ products.js
+ ┣ styles/
+ ┃ ┗ GlobalStyle.js
+ ┗ App.jsx
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📌 주요 기능 상세 + 핵심 코드
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1) SPA 내부 탭 전환 (페이지 이동 없이 컴포넌트 교체)
+React Router로 페이지를 나누지 않고,  
+`useState`로 탭을 관리해 **한 화면에서 FAQ / 문의 게시판을 전환**하도록 구현했습니다.
 
-### `npm run eject`
+```jsx
+const [activeTab, setActiveTab] = useState("notice");
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+return (
+  <div className={styles.tabs}>
+    <button
+      className={activeTab === "notice" ? styles.active : ""}
+      onClick={() => setActiveTab("notice")}
+    >
+      이용안내 FAQ
+    </button>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    <button
+      className={activeTab === "freeboard" ? styles.active : ""}
+      onClick={() => setActiveTab("freeboard")}
+    >
+      문의
+    </button>
+  </div>
+);

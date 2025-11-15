@@ -77,7 +77,7 @@ React Router로 페이지를 나누지 않고,
 
 
 ###🖼️ UI 미리보기
-<p align="center"> <img src="./fna.png" width="45%" /> <img src="./qna.png" width="45%" /> </p>
+<p align="center"> <img src="./fna.jpg" width="45%" /> <img src="./qna.jpg" width="45%" /> </p>
 
 
 ```jsx
@@ -104,8 +104,6 @@ return (
 
 
 ###  2) JSON 데이터 불러오기 (동적 게시판)
-FAQ는 정적 테이블,
-문의게시판(freeboard)은 JSON 데이터를 fetch로 불러와 렌더링했습니다.
 
 ```jsx
 const [freeboardData, setFreeboardData] = useState([]);
@@ -116,7 +114,7 @@ useEffect(() => {
     .then(data => setFreeboardData(data));
 }, []);
 ```
-
+→ freeboardData.json에 있는 데이터를 불러와 문의 게시판을 동적으로 구성.
 
 ###  3) 게시판 데이터 렌더링
 FAQ는 정적 테이블,

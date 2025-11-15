@@ -58,8 +58,9 @@ src/
  ┃ ┗ GlobalStyle.js
  ┗ App.jsx
 
+---
 
-## 📌 주요 기능 상세 + 핵심 코드
+## 📌 주요 기능 상세
 
 ### 1) SPA 내부 탭 전환 (페이지 이동 없이 컴포넌트 교체)
 React Router로 페이지를 나누지 않고,  
@@ -85,3 +86,16 @@ return (
     </button>
   </div>
 );
+
+### 2) 2) JSON 데이터 불러오기 (동적 게시판)
+FAQ는 정적 테이블,
+문의게시판(freeboard)은 JSON 데이터를 fetch로 불러와 렌더링했습니다.
+
+const [freeboardData, setFreeboardData] = useState([]);
+
+useEffect(() => {
+  fetch(process.env.PUBLIC_URL + "/data/freeboardData.json")
+    .then(res => res.json())
+    .then(data => setFreeboardData(data));
+}, []);
+

@@ -75,11 +75,19 @@ src/
 React Router로 페이지를 나누지 않고,  
 `useState`로 탭을 관리해 **한 화면에서 FAQ / 문의 게시판을 전환**하도록 구현했습니다.
 
+<br>
+
+---
 
 ###🖼️ UI 미리보기
-<p align="center"> <img src="./fna.jpg" width="45%" /> <img src="./qna.jpg" width="45%" /> </p>
+<p align="center">
+  <img src="./fna.jpg" width="45%" />
+</p>
+<p align="center">
+  <img src="./qna.jpg" width="45%" />
+</p>
 
-
+<br>
 ```jsx
 const [activeTab, setActiveTab] = useState("notice");
 

@@ -128,8 +128,6 @@ useEffect(() => {
 → freeboardData.json에 있는 데이터를 불러와 문의 게시판을 동적으로 구성.
 
 ###  3) 게시판 데이터 렌더링
-FAQ는 정적 테이블,
-문의게시판(freeboard)은 JSON 데이터를 fetch로 불러와 렌더링했습니다.
 
 ```jsx
 <tbody>

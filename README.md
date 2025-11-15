@@ -3,10 +3,10 @@
 > React로 제작한 디저트 쇼핑몰 프로젝트입니다.  
 > styled-components를 활용한 컴포넌트 단위 디자인과 Redux 전역 상태 관리,  
 > React Router를 이용한 SPA 페이지 전환을 구현했습니다.
-
+<br><br>
 
 ---
-<br><br>
+
 
 ## 📆 프로젝트 개요
 - **개발 기간:** 2025.08  
@@ -14,7 +14,7 @@
 - **목적:** React 학습을 위해 제작했고 컴포넌트 분리, 라우팅, 전역 상태 관리, 스타일링 등 핵심 개념을 직접 구현해보는 데 목적을 두었습니다.
 - **배포 링크:** _(추가 예정)_  
 - **GitHub Repository:** _(현재 페이지)_
-
+<br><br>
 
 ---
 
@@ -26,7 +26,7 @@
 | **Styling** | styled-components, app.css, module.css, Bootstrap (layout only) |
 | **Data** | 더미 JSON 데이터 |
 | **Build & Deploy** | Vite, Vercel |
-
+<br><br>
 
 ---
 
@@ -39,7 +39,7 @@
 | 🛒 장바구니 | ‘add’ 버튼 클릭 시 장바구니 페이지로 이동 |
 | 🏢 회사 소개 | 단순 이미지로 구성된 소개 페이지 |
 | 🔗 네비게이션 | 탭 클릭 시 React Router로 페이지 전환 |
-
+<br><br>
 
 ---
 
@@ -68,7 +68,7 @@ src/
 ```
 
 ---
-
+<br><br>
 ## 📌 주요 기능 상세
 
 ### 1) SPA 내부 탭 전환 (페이지 이동 없이 컴포넌트 교체)

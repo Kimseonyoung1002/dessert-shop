@@ -4,7 +4,9 @@
 > styled-components를 활용한 컴포넌트 단위 디자인과 Redux 전역 상태 관리,  
 > React Router를 이용한 SPA 페이지 전환을 구현했습니다.
 
+
 ---
+
 
 ## 📆 프로젝트 개요
 - **개발 기간:** 2025.08  
@@ -13,7 +15,9 @@
 - **배포 링크:** _(추가 예정)_  
 - **GitHub Repository:** _(현재 페이지)_
 
+
 ---
+
 
 ## 🛠️ 기술 스택
 | 구분 | 기술 |
@@ -23,7 +27,9 @@
 | **Data** | 더미 JSON 데이터 |
 | **Build & Deploy** | Vite, Vercel |
 
+
 ---
+
 
 ## 📱 주요 기능
 | 기능 | 설명 |
@@ -34,7 +40,9 @@
 | 🏢 회사 소개 | 단순 이미지로 구성된 소개 페이지 |
 | 🔗 네비게이션 | 탭 클릭 시 React Router로 페이지 전환 |
 
+
 ---
+
 
 ## 🗂️ 폴더 구조
 ```bash
@@ -92,6 +100,8 @@ return (
     </button>
   </div>
 );
+```
+
 
 ###  2) JSON 데이터 불러오기 (동적 게시판)
 FAQ는 정적 테이블,
@@ -105,11 +115,14 @@ useEffect(() => {
     .then(res => res.json())
     .then(data => setFreeboardData(data));
 }, []);
+```
+
 
 ###  3) 게시판 데이터 렌더링
 FAQ는 정적 테이블,
 문의게시판(freeboard)은 JSON 데이터를 fetch로 불러와 렌더링했습니다.
 
+```jsx
 <tbody>
   {freeboardData.map(item => (
     <tr key={item.id}>
@@ -119,7 +132,7 @@ FAQ는 정적 테이블,
       </td>
       <td>{item.title}</td>
       <td>{item.writer}</td>
-
+```
 
 
       <td>{item.date}</td>

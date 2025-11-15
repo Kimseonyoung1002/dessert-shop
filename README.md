@@ -77,17 +77,9 @@ React Router로 페이지를 나누지 않고,
 
 <br>
 
----
+🖼️ UI 미리보기
+<p align="center"> <img src="./fna.jpg" width="45%" /> <img src="./qna.jpg" width="45%" /> </p>
 
-###🖼️ UI 미리보기
-<p align="center">
-  <img src="./fna.jpg" width="45%" />
-</p>
-<p align="center">
-  <img src="./qna.jpg" width="45%" />
-</p>
-
-<br>
 ```jsx
 const [activeTab, setActiveTab] = useState("notice");
 

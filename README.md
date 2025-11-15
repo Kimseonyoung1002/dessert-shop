@@ -11,9 +11,9 @@
 ## 📆 프로젝트 개요
 - **개발 기간:** 2025.08  
 - **참여 인원:** 개인 프로젝트  
-- **목적:** React 학습을 위해 제작했고 컴포넌트 분리, 라우팅, 전역 상태 관리, 스타일링 등 핵심 개념을 직접 구현해보는 데 목적을 두었습니다.
-- **배포 링크:** _(추가 예정)_  
-- **GitHub Repository:** _(현재 페이지)_
+- **목적:** React 학습을 위해 제작
+- **배포 사이트:** https://kimseonyoung1002.github.io/dessert-shop/
+- **GitHub Repository:** https://github.com/Kimseonyoung1002/dessert-shop
 
 
 ---
@@ -46,24 +46,35 @@
 
 ## 🗂️ 폴더 구조
 ```bash
+public/
+ ┣ data/
+ ┃ ┗ freeboardData.json
+ ┣ fonts/
+ ┗ images/
 src/
  ┣ components/
  ┃ ┣ ProductCard.jsx
  ┃ ┣ Header.jsx
  ┃ ┣ Footer.jsx
- ┃ ┗ Modal.jsx
+ ┃ ┗ VisualBanner.jsx
  ┣ pages/
- ┃ ┣ Home.jsx
- ┃ ┣ Cart.jsx
- ┃ ┣ About.jsx
- ┃ ┗ NotFound.jsx
+ ┃ ┣ AboutPage.jsx
+ ┃ ┣ CartPage.jsx
+ ┃ ┣ CommunityPage.jsx
+ ┃ ┣ CommunityPage.module
+ ┃ ┣ DetailPage.jsx
+ ┃ ┣ ShopPage.jsx
+ ┃ ┗ MainPage.jsx
  ┣ redux/
  ┃ ┣ store.js
- ┃ ┗ productSlice.js
+ ┃ ┗ cartSlice.js
  ┣ data/
- ┃ ┗ products.js
+ ┃ ┗ desserts.js
  ┣ styles/
  ┃ ┗ GlobalStyle.js
+ ┣ index.css
+ ┣ index.jsx
+ ┣ App.css
  ┗ App.jsx
 ```
 

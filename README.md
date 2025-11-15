@@ -66,6 +66,11 @@ src/
 React Router로 페이지를 나누지 않고,  
 `useState`로 탭을 관리해 **한 화면에서 FAQ / 문의 게시판을 전환**하도록 구현했습니다.
 
+
+###🖼️ UI 미리보기
+<p align="center"> <img src="./images/tab-faq.png" width="45%" /> <img src="./images/tab-freeboard.png" width="45%" /> </p>
+
+
 ```jsx
 const [activeTab, setActiveTab] = useState("notice");
 
@@ -87,10 +92,11 @@ return (
   </div>
 );
 
-### 2) 2) JSON 데이터 불러오기 (동적 게시판)
+###  2) JSON 데이터 불러오기 (동적 게시판)
 FAQ는 정적 테이블,
 문의게시판(freeboard)은 JSON 데이터를 fetch로 불러와 렌더링했습니다.
 
+```jsx
 const [freeboardData, setFreeboardData] = useState([]);
 
 useEffect(() => {
@@ -98,4 +104,26 @@ useEffect(() => {
     .then(res => res.json())
     .then(data => setFreeboardData(data));
 }, []);
+
+###  3) 게시판 데이터 렌더링
+FAQ는 정적 테이블,
+문의게시판(freeboard)은 JSON 데이터를 fetch로 불러와 렌더링했습니다.
+
+<tbody>
+  {freeboardData.map(item => (
+    <tr key={item.id}>
+      <td>{item.id}</td>
+      <td>
+        <img src={process.env.PUBLIC_URL + item.productImage} alt="" />
+      </td>
+      <td>{item.title}</td>
+      <td>{item.writer}</td>
+
+
+
+      <td>{item.date}</td>
+      <td>{item.views}</td>
+    </tr>
+  ))}
+</tbody>
 

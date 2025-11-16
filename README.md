@@ -6,7 +6,7 @@
 
 
 ---
-
+<br>
 
 ## 📆 프로젝트 개요
 - **개발 기간:** 2025.08  
@@ -18,6 +18,7 @@
 
 ---
 
+<br>
 
 ## 🛠️ 기술 스택
 | 구분 | 기술 |
@@ -29,6 +30,7 @@
 
 ---
 
+<br>
 
 ## 📱 주요 기능
 | 기능 | 설명 |
@@ -40,7 +42,7 @@
 
 
 ---
-
+<br>
 
 ## 🗂️ 폴더 구조
 ```bash
@@ -80,14 +82,19 @@ src/
 
 ## 📌 주요 기능 상세
 
+
+🖼️ UI 미리보기
+<p align="center">
+ <img src="./fna.jpg" width="100%" /> 
+ <img src="./qna.jpg" width="100%" /> 
+</p>
+
 ### 1) SPA 내부 탭 전환 (페이지 이동 없이 컴포넌트 교체)
 React Router로 페이지를 나누지 않고,  
 `useState`로 탭을 관리해 **한 화면에서 FAQ / 문의 게시판을 전환**하도록 구현했습니다.
 
 <br>
 
-🖼️ UI 미리보기
-<p align="center"> <img src="./fna.jpg" width="100%" /> <img src="./qna.jpg" width="100%" /> </p>
 
 ```jsx
 const [activeTab, setActiveTab] = useState("notice");

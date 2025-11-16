@@ -79,6 +79,7 @@ src/
 ```
 
 ---
+<br>
 
 ## 📌 주요 기능 상세
 
@@ -88,6 +89,7 @@ src/
  <img src="./fna.jpg" width="100%" /> 
  <img src="./qna.jpg" width="100%" /> 
 </p>
+<br>
 
 ### 1) SPA 내부 탭 전환 (페이지 이동 없이 컴포넌트 교체)
 React Router로 페이지를 나누지 않고,  
